@@ -73,19 +73,34 @@
 <li>Symmetry: <strong><em>d(x,y)=d(y,x)</em></strong></li>
 <li>Triangle inequality: <strong><em>d(x,y)+d(y,z) &gt;= d(x,z)</em></strong></li>
 </ul>
-<h2>Euclidean distance</h2>
-<p><strong>Euclidean distance</strong> is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector <strong><em>P</em></strong> and vector <strong><em>Q</em></strong> can be computed as follows:
-<img alt="Euclidean" src="/images/Euclidean_distance.png" /></p>
-<h2>Minkowski distance</h2>
+<h2><a name="Minkowski_distance"></a>Minkowski distance</h2>
 <p><strong>Minkowski dishtance</strong> is the most common distance measure method, there are two points <strong><em>x</em></strong> , <strong><em>y</em></strong> as follows:
 <img alt="Minkowski1" src="/images/Minkowski_distance_1.png" />
 <img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /></p>
+<p>Here, if the <strong><em>P</em></strong> is 2, Minkowski distance would be <a href="#Euclidean_distance">Euclidean distance</a>. If the <strong><em>P</em></strong>  is 1, it would be Manhanttan distance.</p>
+<h3><a name="Euclidean_distance"></a>Euclidean distance</h3>
+<p><strong>Euclidean distance</strong> is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector <strong><em>P</em></strong> and vector <strong><em>Q</em></strong> can be computed as follows:
+<img alt="Euclidean" src="/images/Euclidean_distance.png" /></p>
+<h3><a name="Manhattan_distance"></a>Manhattan distance(Texicab geometry)</h3>
+<p><strong>Manhattan distance</strong> is a form of geometry in which the usual distance function of metric or Euclidean geomery us replaces by a new metirc in which the distance between two points is the sum of the absolute differences of their <a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system">Carteisan coordinates</a>. Manhatten distance is also known as rectilinear distance L1 distance.</p>
+<p><img alt="Manhattan_dis" src="/images/Manhattan_dis.png" /></p>
+<h3><a name="Chebyshev_distance"></a>Chebyshev distance</h3>
+<p>If <strong><em>P</em></strong> tends to be infinite, <strong>Minkowski distance</strong> would be <strong>Chebyshev distance</strong>. It can be expressed as: 
+<img alt="chevi_dis" src="/images/Chebyshev_distance.png" /></p>
+<h3>Extends for Minkowski distance</h3>
+<p>In plain, if the Euclidean distance is set as 1, when <strong><em>p</em></strong> is 2, the figure would be a round. Thus, what the figures would be when <strong><em>p</em></strong> is the other value?
+<img alt="p_diff" src="/images/p_diff.png" /></p>
+<p>Commonly, before we are going to use <strong>Minkowski distance</strong>, a regularion method named <strong>"z-transform"</strong> is adopted:
+<img alt="z-trans" src="/images/z-trans.png" />
+mu: the mean in that dimention<br />
+sigma: the variance in that dimention</p>
                         <hr/>
 <p>
 </p>                    </section>
                     <hr/>
                     <aside class="post-meta">
                         <p>Category: <a href="http://mangohero1985.github.io/category/machine-learning.html">Machine Learning</a></p>
+                        <p>Tags: <a href="http://mangohero1985.github.io/tag/unsupervised.html">Unsupervised</a>, <a href="http://mangohero1985.github.io/tag/clustering.html">Clustering</a></p>
 						<p>Last modified: 2015-12-15 00:00:00-08:00</p>
                     </aside>
                     <hr/>

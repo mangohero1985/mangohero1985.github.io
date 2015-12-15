@@ -6,10 +6,24 @@
 &lt;li&gt;Symmetry: &lt;strong&gt;&lt;em&gt;d(x,y)=d(y,x)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Triangle inequality: &lt;strong&gt;&lt;em&gt;d(x,y)+d(y,z) &amp;gt;= d(x,z)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Euclidean distance&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Euclidean distance&lt;/strong&gt; is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; and vector &lt;strong&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/strong&gt; can be computed as follows:
-&lt;img alt="Euclidean" src="/images/Euclidean_distance.png" /&gt;&lt;/p&gt;
-&lt;h2&gt;Minkowski distance&lt;/h2&gt;
+&lt;h2&gt;&lt;a name="Minkowski_distance"&gt;&lt;/a&gt;Minkowski distance&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Minkowski dishtance&lt;/strong&gt; is the most common distance measure method, there are two points &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt; , &lt;strong&gt;&lt;em&gt;y&lt;/em&gt;&lt;/strong&gt; as follows:
 &lt;img alt="Minkowski1" src="/images/Minkowski_distance_1.png" /&gt;
-&lt;img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /&gt;&lt;/p&gt;</summary></entry></feed>
+&lt;img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Here, if the &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; is 2, Minkowski distance would be &lt;a href="#Euclidean_distance"&gt;Euclidean distance&lt;/a&gt;. If the &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt;  is 1, it would be Manhanttan distance.&lt;/p&gt;
+&lt;h3&gt;&lt;a name="Euclidean_distance"&gt;&lt;/a&gt;Euclidean distance&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Euclidean distance&lt;/strong&gt; is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; and vector &lt;strong&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/strong&gt; can be computed as follows:
+&lt;img alt="Euclidean" src="/images/Euclidean_distance.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a name="Manhattan_distance"&gt;&lt;/a&gt;Manhattan distance(Texicab geometry)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Manhattan distance&lt;/strong&gt; is a form of geometry in which the usual distance function of metric or Euclidean geomery us replaces by a new metirc in which the distance between two points is the sum of the absolute differences of their &lt;a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system"&gt;Carteisan coordinates&lt;/a&gt;. Manhatten distance is also known as rectilinear distance L1 distance.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Manhattan_dis" src="/images/Manhattan_dis.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;a name="Chebyshev_distance"&gt;&lt;/a&gt;Chebyshev distance&lt;/h3&gt;
+&lt;p&gt;If &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; tends to be infinite, &lt;strong&gt;Minkowski distance&lt;/strong&gt; would be &lt;strong&gt;Chebyshev distance&lt;/strong&gt;. It can be expressed as: 
+&lt;img alt="chevi_dis" src="/images/Chebyshev_distance.png" /&gt;&lt;/p&gt;
+&lt;h3&gt;Extends for Minkowski distance&lt;/h3&gt;
+&lt;p&gt;In plain, if the Euclidean distance is set as 1, when &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;&lt;/strong&gt; is 2, the figure would be a round. Thus, what the figures would be when &lt;strong&gt;&lt;em&gt;p&lt;/em&gt;&lt;/strong&gt; is the other value?
+&lt;img alt="p_diff" src="/images/p_diff.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Commonly, before we are going to use &lt;strong&gt;Minkowski distance&lt;/strong&gt;, a regularion method named &lt;strong&gt;"z-transform"&lt;/strong&gt; is adopted:
+&lt;img alt="z-trans" src="/images/z-trans.png" /&gt;
+mu: the mean in that dimention&lt;br /&gt;
+sigma: the variance in that dimention&lt;/p&gt;</summary><category term="Unsupervised"></category><category term="Clustering"></category></entry></feed>
