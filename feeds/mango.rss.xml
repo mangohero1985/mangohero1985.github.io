@@ -12,5 +12,5 @@
 &lt;img alt="Euclidean" src="/images/Euclidean_distance.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;Minkowski distance&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Minkowski dishtance&lt;/strong&gt; is the most common distance measure method, there are two points &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt; , &lt;strong&gt;&lt;em&gt;y&lt;/em&gt;&lt;/strong&gt; as follows:
-&lt;img alt="Minkowski1" src="/images/Minkowski_distance(1" /&gt;.png)
-&lt;img alt="Minkowski2" src="/images/Minkowski_distance(2" /&gt;.png)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mango</dc:creator><pubDate>Tue, 15 Dec 2015 15:00:00 -0800</pubDate><guid>tag:,2015-12-11:distance_metics.html</guid><category>Unsupervised</category><category>Clustering</category></item></channel></rss>
+&lt;img alt="Minkowski1" src="/images/Minkowski_distance_1.png" /&gt;
+&lt;img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mango</dc:creator><pubDate>Tue, 15 Dec 2015 15:00:00 -0800</pubDate><guid>tag:,2015-12-11:distance_metics.html</guid><category>Unsupervised</category><category>Clustering</category></item></channel></rss>
