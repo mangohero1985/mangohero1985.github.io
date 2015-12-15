@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/all.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2015-12-15T15:00:00-08:00</updated><entry><title>Distance Metrics</title><link href="http://mangohero1985.github.io/distance_metics.html" rel="alternate"></link><updated>2015-12-15T15:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2015-12-11:distance_metics.html</id><summary type="html">&lt;h2&gt;Euclidean Distance&lt;/h2&gt;
-&lt;h3&gt;Metrics Space&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/all.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2015-12-15T00:00:00-08:00</updated><entry><title>Distance Metrics</title><link href="http://mangohero1985.github.io/distance_metics.html" rel="alternate"></link><updated>2015-12-15T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2015-12-11:distance_metics.html</id><summary type="html">&lt;h2&gt;Metrics Space&lt;/h2&gt;
 &lt;p&gt;Given a set &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt; is a metirc space if it keeps to a function &lt;strong&gt;&lt;em&gt;d(x,y)&lt;/em&gt;&lt;/strong&gt; that can measure the distance between any two points &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt; , &lt;strong&gt;&lt;em&gt;y&lt;/em&gt;&lt;/strong&gt; in space of &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt;. Then, &lt;strong&gt;&lt;em&gt;d&lt;/em&gt;&lt;/strong&gt; must satisfy the axioms of the metrics:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Non-negativity: &lt;strong&gt;&lt;em&gt;d(x,y)&amp;gt;=0&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;d(x,y)=0&lt;/em&gt;&lt;/strong&gt; if and only if &lt;strong&gt;&lt;em&gt;x=y&lt;/em&gt;&lt;/strong&gt; &lt;/li&gt;
 &lt;li&gt;Symmetry: &lt;strong&gt;&lt;em&gt;d(x,y)=d(y,x)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Triangle inequality: &lt;strong&gt;&lt;em&gt;d(x,y)+d(y,z) &amp;gt;= d(x,z)&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Euclidean distance&lt;/h3&gt;
+&lt;h2&gt;Euclidean distance&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Euclidean distance&lt;/strong&gt; is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; and vector &lt;strong&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/strong&gt; can be computed as follows:
 &lt;img alt="Euclidean" src="/images/Euclidean_distance.png" /&gt;&lt;/p&gt;
-&lt;h3&gt;Minkowski distance&lt;/h3&gt;
+&lt;h2&gt;Minkowski distance&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Minkowski dishtance&lt;/strong&gt; is the most common distance measure method, there are two points &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt; , &lt;strong&gt;&lt;em&gt;y&lt;/em&gt;&lt;/strong&gt; as follows:
 &lt;img alt="Minkowski1" src="/images/Minkowski_distance_1.png" /&gt;
-&lt;img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /&gt;&lt;/p&gt;</summary><category term="Unsupervised"></category><category term="Clustering"></category></entry></feed>
+&lt;img alt="Minkowski2" src="/images/Minkowski_distance_2.png" /&gt;&lt;/p&gt;</summary></entry></feed>
