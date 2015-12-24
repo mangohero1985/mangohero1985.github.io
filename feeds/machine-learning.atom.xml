@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/machine-learning.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2015-12-15T00:00:00-08:00</updated><entry><title>Distance Metrics</title><link href="http://mangohero1985.github.io/distance_metics.html" rel="alternate"></link><updated>2015-12-15T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2015-12-11:distance_metics.html</id><summary type="html">&lt;h2&gt;Metrics Space&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/machine-learning.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2015-12-24T00:00:00-08:00</updated><entry><title>Adaptive Boosting</title><link href="http://mangohero1985.github.io/Adaptive_boosting.html" rel="alternate"></link><updated>2015-12-24T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2015-12-24:Adaptive_boosting.html</id><summary type="html">&lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;AdaBoost is a powerful classifier that work well on both basic and more complex recogition problems. AdaBoost works by creating a highly accurate classifier by combining many relatively weak and inaccurate classifiers.&lt;/p&gt;</summary><category term="Aggregation"></category></entry><entry><title>Distance Metrics</title><link href="http://mangohero1985.github.io/distance_metics.html" rel="alternate"></link><updated>2015-12-15T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2015-12-11:distance_metics.html</id><summary type="html">&lt;h2&gt;Metrics Space&lt;/h2&gt;
 &lt;p&gt;Given a set &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt; is a metirc space if it keeps to a function &lt;strong&gt;&lt;em&gt;d(x,y)&lt;/em&gt;&lt;/strong&gt; that can measure the distance between any two points &lt;strong&gt;&lt;em&gt;x&lt;/em&gt;&lt;/strong&gt; , &lt;strong&gt;&lt;em&gt;y&lt;/em&gt;&lt;/strong&gt; in space of &lt;strong&gt;&lt;em&gt;X&lt;/em&gt;&lt;/strong&gt;. Then, &lt;strong&gt;&lt;em&gt;d&lt;/em&gt;&lt;/strong&gt; must satisfy the axioms of the metrics:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Non-negativity: &lt;strong&gt;&lt;em&gt;d(x,y)&amp;gt;=0&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;em&gt;d(x,y)=0&lt;/em&gt;&lt;/strong&gt; if and only if &lt;strong&gt;&lt;em&gt;x=y&lt;/em&gt;&lt;/strong&gt; &lt;/li&gt;
@@ -26,4 +27,23 @@
 &lt;p&gt;Commonly, before we are going to use &lt;strong&gt;Minkowski distance&lt;/strong&gt;, a regularion method named &lt;strong&gt;"z-transform"&lt;/strong&gt; is adopted:
 &lt;img alt="z-trans" src="/images/z-trans.png" /&gt;
 mu: the mean in that dimention&lt;br /&gt;
-sigma: the variance in that dimention&lt;/p&gt;</summary><category term="Unsupervised"></category><category term="Clustering"></category></entry></feed>
+sigma: the variance in that dimention&lt;/p&gt;
+&lt;p&gt;=======&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;a285ab651fa2f537e0c1a7a00d97b05b84db7b8b&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Euclidean Distance&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Euclidean distance&lt;/strong&gt; is the "ordianary" disctance between two points in Euclidean space. The points in Euclidean space (N-Space) are called Euclidean vectors. The Euclidean distance of vector of vector &lt;strong&gt;&lt;em&gt;P&lt;/em&gt;&lt;/strong&gt; and vector &lt;strong&gt;&lt;em&gt;Q&lt;/em&gt;&lt;/strong&gt; can be computed as follows:
+&lt;img alt="Euclidean" src="/images/Euclidean_distance.png" /&gt;&lt;/p&gt;</summary><category term="Unsupervised"></category><category term="Clustering"></category></entry></feed>
