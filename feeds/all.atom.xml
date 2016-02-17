@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/all.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2016-02-06T00:00:00-08:00</updated><entry><title>Garmin Vivoactive</title><link href="http://mangohero1985.github.io/Garmin_Vivoactive.html" rel="alternate"></link><updated>2016-02-06T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2016-02-06:Garmin_Vivoactive.html</id><summary type="html">&lt;h2&gt;使用心得&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MACHINE LEARING NOTE</title><link href="http://mangohero1985.github.io/" rel="alternate"></link><link href="http://mangohero1985.github.io//feeds/all.atom.xml" rel="self"></link><id>http://mangohero1985.github.io/</id><updated>2016-02-16T00:00:00-08:00</updated><entry><title>Skip-gram</title><link href="http://mangohero1985.github.io/skip_gram.html" rel="alternate"></link><updated>2016-02-16T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2016-02-17:skip_gram.html</id><summary type="html">&lt;h2&gt;Skip-gram sampling&lt;/h2&gt;
+&lt;p&gt;Skip-grams is a technique where by n-grams are still stored  to model language, but they allow for tokens to be skipped. This method can overcome the data sparsity problem to some extend&lt;sup id="fnref:Explaination"&gt;&lt;a class="footnote-ref" href="#fn:Explaination" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;. &lt;/p&gt;
+&lt;p&gt;Skip-gram can sample the context in the way of "jumping". For example, set a k of n-gram skip-gram model. k means the range of word-skip and n is still the concept of n-gram. Give out a sentence of w1 to w10. If we set the current word is w5. In this case, we use a model of 3 of 2 skip-gram. Then, the context would be extract as 2-gram and the word-skip be 4. the prefix context is {w2,w3,w4} and the surfix context is {w6,w7,w8}. The model would sample 2 words from context either. Sampling result would be {wx,wy|x,y from (w2,w3,w4,w6,w7,w8)}&lt;/p&gt;
+&lt;p&gt;Example from the paper&lt;sup id="fnref:Explaination"&gt;&lt;a class="footnote-ref" href="#fn:Explaination" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;img alt="skip_gram" src="/images/skip_gram.png" /&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:Explaination"&gt;
+&lt;p&gt;Paper: A Closer Look at Skip-gram Modelling&amp;#160;&lt;a class="footnote-backref" href="#fnref:Explaination" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</summary><category term="Neural language model"></category><category term="Deep learning"></category></entry><entry><title>Garmin Vivoactive</title><link href="http://mangohero1985.github.io/Garmin_Vivoactive.html" rel="alternate"></link><updated>2016-02-06T00:00:00-08:00</updated><author><name>Mango</name></author><id>tag:mangohero1985.github.io,2016-02-06:Garmin_Vivoactive.html</id><summary type="html">&lt;h2&gt;使用心得&lt;/h2&gt;
 &lt;p&gt;由于之前并没用使用过其他品牌的smart watch，所以只能说一说对这款表的感受，如果您也在使用这款表，我们可以一起挖掘一下它的潜能。&lt;/p&gt;
 &lt;h3&gt;一言概之&lt;/h3&gt;
 &lt;table&gt;

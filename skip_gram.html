@@ -6,7 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>MACHINE LEARING NOTE - Mango</title>
+        <title>    Skip-gram
+</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
             <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/normalize.css">
@@ -54,8 +55,7 @@
     <p>
     	Fork this site <a href="https://github.com/mangohero1985/mangohero1985.github.io" target="acm-sfsu">here</a>.
     </p>
-</footer></header>
-    <div id="post-container">
+</footer></header>    <div id="post-container">
         <ol id="post-list">
             <li>
                 <article class="post-entry">
@@ -66,58 +66,61 @@
                         <a href="http://mangohero1985.github.io/skip_gram.html" rel="bookmark"><h1>Skip-gram</h1></a>
                     </header>
                     <section class="post-content">
-                        <p>Skip-grams is a technique where by n-grams are still stored  to model language, but they allow for tokens to be skipped. This method can overcome the data sparsity problem to some extend.</p>
-                    </section>
+                        <h2>Skip-gram sampling</h2>
+<p>Skip-grams is a technique where by n-grams are still stored  to model language, but they allow for tokens to be skipped. This method can overcome the data sparsity problem to some extend<sup id="fnref:Explaination"><a class="footnote-ref" href="#fn:Explaination" rel="footnote">1</a></sup>. </p>
+<p>Skip-gram can sample the context in the way of "jumping". For example, set a k of n-gram skip-gram model. k means the range of word-skip and n is still the concept of n-gram. Give out a sentence of w1 to w10. If we set the current word is w5. In this case, we use a model of 3 of 2 skip-gram. Then, the context would be extract as 2-gram and the word-skip be 4. the prefix context is {w2,w3,w4} and the surfix context is {w6,w7,w8}. The model would sample 2 words from context either. Sampling result would be {wx,wy|x,y from (w2,w3,w4,w6,w7,w8)}</p>
+<p>Example from the paper<sup id="fnref:Explaination"><a class="footnote-ref" href="#fn:Explaination" rel="footnote">1</a></sup>
+<img alt="skip_gram" src="/images/skip_gram.png" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:Explaination">
+<p>Paper: A Closer Look at Skip-gram Modelling&#160;<a class="footnote-backref" href="#fnref:Explaination" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                        <hr/>
+<p>
+        Previous Article: 
+            <a href="http://mangohero1985.github.io/Garmin_Vivoactive.html">
+                Garmin Vivoactive
+            </a>
+</p>                    </section>
+                    <hr/>
+                    <aside class="post-meta">
+                        <p>Category: <a href="http://mangohero1985.github.io/category/deep-learning.html">Deep Learning</a></p>
+                        <p>Tags: <a href="http://mangohero1985.github.io/tag/neural-language-model.html">Neural language model</a>, <a href="http://mangohero1985.github.io/tag/deep-learning.html">Deep learning</a></p>
+						<p>Last modified: 2016-02-16 00:00:00-08:00</p>
+                    </aside>
+                    <hr/>
+<section>
+    <p id="post-share-links">
+        Share on:
+        <a href="http://twitter.com/home?status=Skip-gram%20http%3A//mangohero1985.github.io/skip_gram.html" target="_blank" title="Share on Twitter">Twitter</a>
+        |
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A//mangohero1985.github.io/skip_gram.html" target="_blank" title="Share on Facebook">Facebook</a>
+        |
+        <a href="https://plus.google.com/share?url=http%3A//mangohero1985.github.io/skip_gram.html" target="_blank" title="Share on Google Plus">Google+</a>
+        |
+        <a href="mailto:?subject=Skip-gram&amp;body=http%3A//mangohero1985.github.io/skip_gram.html" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'mangohero1985';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
                 </article>
             </li>
-            <hr/>
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2016-02-06T18:50:52-08:00" pubdate>
-                            Sat 06 February 2016
-                        </time>
-                        <a href="http://mangohero1985.github.io/Garmin_Vivoactive.html" rel="bookmark"><h1>Garmin Vivoactive</h1></a>
-                    </header>
-                    <section class="post-content">
-                        <p>比起佳明(Garmin)更专业的运动装备系列，vivo系列定位于休闲运动，更加贴近于普通人的日常生活。计步，慢跑，游泳，室内有氧训练这些功能自然也少不了。其中Vivoactive算是这个系列里功能最丰富，最接近于手表的Smart Gadget.</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2015-12-24T00:00:00-08:00" pubdate>
-                            Thu 24 December 2015
-                        </time>
-                        <a href="http://mangohero1985.github.io/Adaptive_boosting.html" rel="bookmark"><h1>Adaptive Boosting</h1></a>
-                    </header>
-                    <section class="post-content">
-                        <p>AdaBoost is a powerful classifier that work well on both basic and more complex recogition problems. AdaBoost works by creating a highly accurate classifier by combining many relatively weak and inaccurate classifiers.</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2015-12-11T00:00:00-08:00" pubdate>
-                            Fri 11 December 2015
-                        </time>
-                        <a href="http://mangohero1985.github.io/distance_metics.html" rel="bookmark"><h1>Distance Metrics</h1></a>
-                    </header>
-                    <section class="post-content">
-                        <p>We are intruducing some distance metrics which are commonly used on measure similarity in machine learning.</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
         </ol>
-        <div class="paginator">
-            Page 1 / 1
-        </div>
-
     </div>
         </div>
 
