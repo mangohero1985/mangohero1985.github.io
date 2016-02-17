@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>    how to tackle real life problem by machine learning?
+</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/normalize.css">
+        <link href='//fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/main.css">
+
+    <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/blog.css">
+    <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/github.css">
+        <link href="http://mangohero1985.github.io//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="MACHINE LEARING NOTE Atom Feed" />
+        <link rel="icon" type="image/png" href="http://mangohero1985.github.io/images/icons/favicon.ico">
+        <script src="http://mangohero1985.github.io/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="wrapper">
+<header id="sidebar" class="side-shadow">
+    <hgroup id="site-header">
+        <a id="site-title" href="http://mangohero1985.github.io"><h2><i class="icon-laptop"></i> MACHINE LEARING NOTE</h2></a>
+        <p id="site-desc"><center><font size='6'></font></center></p>
+    </hgroup>
+    <nav>
+<ul id="contact-methods">
+    <a href="mailto:mangohero1985@gmail.com" target="envelope-alt"><i class="icon-envelope-alt svc-badge"></i></a>
+    <a href="https://github.com/mangohero1985/mangohero1985.github.io" target="github"><i class="icon-github svc-badge"></i></a>
+    <a href="https://facebook.com/mangohero1985" target="facebook"><i class="icon-facebook svc-badge"></i></a>
+    <a href="" target="twitter"><i class="icon-twitter svc-badge"></i></a>
+</ul>        <ul id="nav-links">
+                <li><a href="http://mangohero1985.github.io/pages/Blog.html">Blog</a></li>
+                <li><a href="http://mangohero1985.github.io/pages/Contact.html">Contact</a></li>
+                <li><a href="http://mangohero1985.github.io/pages/Project.html">Project</a></li>
+        </ul>
+    </nav>
+<footer id="site-info">
+    <p>
+        Proudly powered by <a href="http://getpelican.com/" target="pelican">Pelican</a> and <a href="http://python.org/" target="python">Python</a>. Theme by <a href="https://github.com/hdra/pelican-cait" target="github">hndr</a>.
+    </p>
+    <p>
+        Textures by <a href="http://subtlepatterns.com/" target="subtlepatterns">Subtle Pattern</a>. Font Awesome by <a href="http://fortawesome.github.io/Font-Awesome/" target="github">Dave Grandy</a>.
+    </p>
+    <p>
+    	Fork this site <a href="https://github.com/mangohero1985/mangohero1985.github.io" target="acm-sfsu">here</a>.
+    </p>
+</footer></header>    <div id="post-container">
+        <ol id="post-list">
+            <li>
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <time class="post-time" datetime="2016-02-17T19:45:34-08:00" pubdate>
+                            Wed 17 February 2016
+                        </time>
+                        <a href="http://mangohero1985.github.io/machine_learning.html" rel="bookmark"><h1>how to tackle real life problem by machine learning?</h1></a>
+                    </header>
+                    <section class="post-content">
+                        <h2>Table of contents</h2>
+<ol>
+<li>Data exploration<ol>
+<li>type of data</li>
+<li>descriptive statistics</li>
+<li>visualization</li>
+</ol>
+</li>
+<li>Data Preprocessing<ol>
+<li>missing value treatment</li>
+<li>outlier treatment </li>
+<li>sampling</li>
+<li>dimension reduction</li>
+<li>data normalization</li>
+</ol>
+</li>
+<li>Feature enginerring<ol>
+<li>feature extraction</li>
+<li>data transformation</li>
+<li>feature construction/creation</li>
+<li>feature learning</li>
+<li>feature selection</li>
+<li>feature importance</li>
+</ol>
+</li>
+<li>Algorithm   </li>
+<li>model selectino </li>
+<li>evaluation<ol>
+<li>debug<ul>
+<li>learning curve</li>
+</ul>
+</li>
+<li>error analysis</li>
+</ol>
+</li>
+</ol>
+<h2>Data exlporation</h2>
+<h3>objective</h3>
+<ul>
+<li>helping to select the right tool for preprocessing</li>
+<li>recognize pattern by human</li>
+</ul>
+<h3>Exploratory Data Analysis</h3>
+<p>Exploratory Data Analysis (EDA), was introduced by John Tukey in the 1960s
+- http://blogs.technet.com/b/machinelearning/archive/2015/09/24/data-exploration-with-azure-ml.aspx</p>
+<ul>
+<li>correlation between predicted variable and feature</li>
+<li>correlation between features</li>
+<li>outliers since it doesnt reflect the real data</li>
+<li>degenerate features? e.g feature of many 0</li>
+<li>
+<p>biases in data?</p>
+</li>
+<li>
+<p>type of data</p>
+<ul>
+<li>variable category: continuous, catagorical</li>
+<li>type of variable: predictor, target</li>
+<li>data type 
+    *record data, data matrix(numeric only), document data, transaction data, graph data, ordered data</li>
+</ul>
+</li>
+<li>
+<p>analysis</p>
+<ul>
+<li>univariate<ul>
+<li>discriptive statistics: central of tendency, dispersion</li>
+<li>frequency table</li>
+</ul>
+</li>
+<li>bivariate<ul>
+<li>continuous data: correlation chi-square test (test for dependence)</li>
+<li>categorical data: two-way table, chi-square test</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>visualization<ul>
+<li>objective<ul>
+<li>detect general patterns and trends</li>
+<li>detect outliers and unusual patterns</li>
+</ul>
+</li>
+<li>visualization techniques<ul>
+<li>bar chart<ul>
+<li>count of data</li>
+</ul>
+</li>
+<li>histogram <ul>
+<li>distribution of attribute for modeling</li>
+</ul>
+</li>
+<li>factor plot<ul>
+<li>to-do</li>
+</ul>
+</li>
+<li>box plot<ul>
+<li>outlier detection</li>
+</ul>
+</li>
+<li>scatter plots<ul>
+<li>correlation between Y and X</li>
+</ul>
+</li>
+<li>matrix plots<ul>
+<li>useful when objects are sorted according to class</li>
+</ul>
+</li>
+<li>correlation matrix</li>
+<li>parallel coordinates<ul>
+<li>visualize high dimensional data</li>
+<li>x-axis is attribute, y-axis is value, each line is an object, use differnt colored line for different class</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>note</h3>
+<ol>
+<li>in a histogram, if the distribution of class in a attribute is uneven, i.e some class happened to occur more, then this attribute is useful since we have higher chance of correct prediction in the higher frequency class</li>
+<li>in factor plot, difference in value if good, since we can differntiate class easily by looking at the value</li>
+</ol>
+<p>Classification Binary Class
+to-do: write down what to plot for different cases and what information can be draw for each plot</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>cata.bin</th>
+<th>cata.mult</th>
+<th>cont</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bar chart</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>bar chart by class</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>factor plot</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+</tr>
+<tr>
+<td>histogram</td>
+<td></td>
+<td></td>
+<td>Y</td>
+</tr>
+<tr>
+<td>pdf</td>
+<td></td>
+<td></td>
+<td>Y</td>
+</tr>
+<tr>
+<td>box plot</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>factor plot</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>scatter plots</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>matrix plots</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>correlation matrix</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>parallel coordinates</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Data pre-processing:</h2>
+<ol>
+<li>
+<p>missing value treatment</p>
+<ul>
+<li>generative model<ul>
+<li>intergrate our missing variables</li>
+<li>omit the attribute</li>
+</ul>
+</li>
+<li>discriminative<ul>
+<li>df.info()</li>
+<li>omit the attribute</li>
+<li>numeric<ul>
+<li>"recover" the data by generating sample from empirical distribution, e.g random number from mean - sd to mean + sd</li>
+<li>fill in with mean value</li>
+<li>treat as hidden variables and apply EM <a href="http://mlg.eng.cam.ac.uk/zoubin/papers/nips93.pdf">paper</a></li>
+<li></li>
+</ul>
+</li>
+<li>catagorical<ul>
+<li>encode a missing value</li>
+<li>treat it as mode value?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>outlier </p>
+</li>
+<li>sampling</li>
+<li>dimension reduction</li>
+</ol>
+<h3>reference</h3>
+<ol>
+<li>http://deblivingdata.net/machine-learning-tricks/<ul>
+<li>feature correlated with predicted variable</li>
+<li>remove outlier? why?</li>
+</ul>
+</li>
+</ol>
+<h2>Feature engineering</h2>
+<ol>
+<li>feature extraction<ul>
+<li>remove unnecessary column e.g ID, name,...</li>
+<li>distribution of features overall and in each class (classification problem)<ul>
+<li>catagorical: sns.countplot(x=, hu=,), sns.factorplot(give mean and also sd)</li>
+<li>continous: df.hist(bins= ) bins use to convert continuous to catagorial data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>data transformation<ul>
+<li>objective:<ul>
+<li>change scale e.g non-linear to linear, skewed dist. to symmetric dist</li>
+</ul>
+</li>
+<li>logarithm, square, square root, binning</li>
+</ul>
+</li>
+<li>feature construction/creation<ul>
+<li>converting numerical to categorical</li>
+<li>creating dummy variable for categorical data</li>
+</ul>
+</li>
+<li>feature learning</li>
+<li>feature importance</li>
+<li>feature selection<ul>
+<li>what? when? why? how?</li>
+<li>why?<ul>
+<li>in a small feature set (lower dim), it is easier for data visualization and data understanding</li>
+<li>reducing the measurement and storage requirements</li>
+<li>reducing training and utilization times</li>
+<li><code>defying the surse of dimensionality to improve prediction performance ?</code></li>
+</ul>
+</li>
+<li>how?<ol>
+<li>filtering<ul>
+<li>select variables by ranking them with score function, the individual predictive power, usually correlation<ul>
+<li>e.g in regression: correlation coefficients which is related to R square in linear regression so higher correlation means better fit, f regression (sklean)<ul>
+<li>f regression test importance of coefficient(s) against intercept, i.e if the model is predictive or not</li>
+<li>t regression is a univariate case of f regression</li>
+</ul>
+</li>
+<li>in classification: score function may be accuracy, false positive rate, AUC, <code>fisher's criterion(Duda et al., 2001)</code>, chi2 (sklearn)...<ul>
+<li>chi2 test tests for dependence between ONE predictor and target</li>
+</ul>
+</li>
+<li>in text classification, Forman (2003)</li>
+<li>for both regression and classification: empirical estimates of the mutual information (dependence between distribution of x and y) , for continouous variables, discretizing the variables</li>
+<li>information gain??</li>
+</ul>
+</li>
+<li>advantages:<ul>
+<li>very fast</li>
+<li>simple to apply</li>
+</ul>
+</li>
+<li>disadvantages<ul>
+<li>doesnt take into account interactions between features</li>
+</ul>
+</li>
+<li>when to use?<ul>
+<li>save running time by using light filtering</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>subset selection <ul>
+<li>assess subsets of variables according to their usefulness to a given predictor, usefulness is measure in objective function</li>
+<li>three methods: wrappers, filters, embedded</li>
+<li>warppers and <code>embedded</code><ul>
+<li>forward selection and backward elimination (AIC, BIC)</li>
+<li>independent of algorithm</li>
+<li>optimizing objective function e.g RMS in regression, f-regression for regression</li>
+<li>objective function can be average of CV instead of training error to prevent overfitting, trade-off between model complexity and predictive power,</li>
+</ul>
+</li>
+<li>nested subset method<ul>
+<li><code>??</code></li>
+</ul>
+</li>
+<li>filters for subset selection <ul>
+<li><code>??</code></li>
+</ul>
+</li>
+<li>direct objective optimizatio<ul>
+<li>directly optimizing cost function by selection subset of features</li>
+<li>e.g subset selection in SVM<ul>
+<li>minimise error function $R^2W^2(\sigma)$ w.r.t $\sigma$ by gradient descend instead of using heuristic method for $\sigma=[0,1]$. $\sigma$ is subjected to constrain that $\sum_i\sigma_i=m$ in 
+$$R^2W^2(\sigma)+\lambda\sum_i(\sigma_i)^p$$</li>
+<li>train using linear SVM and shrink its coefficient step by step until  generalization error is converged then eliminate features whose coefficient is close to 0</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>regularization<ul>
+<li>objective: reduce complexity of model hence prevent overfitting i.e training error increase but test error decrease</li>
+<li>when? <ul>
+<li>when we have lots of features</li>
+</ul>
+</li>
+<li>how?<ul>
+<li>sacrificing little bias and in turn reduce variance, hence the model is more suitable for new data though overall error increase</li>
+<li>reducing some parameters to zero as lambda increase</li>
+</ul>
+</li>
+<li><code>how to solve lambda and n? also geometric interpretation</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>when to use?<ul>
+<li>save computational cost --&gt; dimension reduction</li>
+<li><code>when you care about the feature themselves?</code> [Guyon et al., Causal feature selection, 07]</li>
+</ul>
+</li>
+<li>when not to use<ul>
+<li>email classification case, long tail word may be useful, zipf law</li>
+<li>if computational cost doesnt matter, we can try regularization instead</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>note:
+1.  generalization error also calls out-of-sample error is a measure of how accurately an algorithm is able to predict outcome values for previously unseen data.
+2. </p>
+<h3>reference</h3>
+<ol>
+<li>Course Lecture Slides and Materials, Columbia
+    http://www.columbia.edu/~rsb2162/FES2013/materials.html</li>
+<li>JMLR Special Issue on Variable and Feature Selection
+    http://jmlr.org/papers/special/feature03.html</li>
+<li>feature extraction foundations and applications
+    http://www.springer.com/jp/book/9783540354871</li>
+<li>explanation about feature engineering
+    http://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/</li>
+<li>kaggle competition -- predicting people who will go to hospital:<ul>
+<li>sql code for creating features</li>
+<li>list of features</li>
+<li>https://kaggle2.blob.core.windows.net/wiki-files/327/e4cd1d25-eca9-49ca-9593-b254a773fe03/Market%20Makers%20-%20Milestone%201%20Description%20V2%201.pdf</li>
+</ul>
+</li>
+<li>feature selection by alex bouchard a berkeley lecture<ul>
+<li>http://www.cs.berkeley.edu/~jordan/courses/294-fall09/lectures/feature/</li>
+</ul>
+</li>
+<li>an introduction to variable and feature selectoin <ul>
+<li>http://www.ai.mit.edu/projects/jmlr/papers/volume3/guyon03a/source/old/guyon03a.pdf</li>
+</ul>
+</li>
+<li>feature selection for svm<ul>
+<li>http://papers.nips.cc/paper/1850-feature-selection-for-svms.pdf</li>
+</ul>
+</li>
+</ol>
+<h2>micelleneous</h2>
+<p>remove duplicated value
+continuous: normalizatoin
+use excel or google refine for prototyping
+for continuous variables and classificatoin: distribution over different class?</p>
+<h2>reference</h2>
+<ol>
+<li><a href="http://cs229.stanford.edu/materials/ML-advice.pdf">advice for applying machine learning by andrew ng</a></li>
+</ol><script type= "text/javascript">
+    if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+        var mathjaxscript = document.createElement('script');
+        mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+        mathjaxscript.type = 'text/javascript';
+        mathjaxscript.src = 'https:' == document.location.protocol
+                ? 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+                : 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+        mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+            "MathJax.Hub.Config({" +
+            "    config: ['MMLorHTML.js']," +
+            "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+            "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+            "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+            "    displayAlign: 'center'," +
+            "    displayIndent: '0em'," +
+            "    showMathMenu: true," +
+            "    tex2jax: { " +
+            "        inlineMath: [ ['$','$'] ], " +
+            "        displayMath: [ ['$$','$$'] ]," +
+            "        processEscapes: true," +
+            "        preview: 'TeX'," +
+            "    }, " +
+            "    'HTML-CSS': { " +
+            "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+            "    } " +
+            "}); ";
+        (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+    }
+</script>
+
+                        <hr/>
+<p>
+        Previous Article: 
+            <a href="http://mangohero1985.github.io/cbow.html">
+                Continuous bag of words
+            </a>
+    <span style="float:right;">
+        Next Article: 
+            <a href="http://mangohero1985.github.io/negtive_sampling.html">
+                Negtive sampling
+            </a>
+    </span>
+</p>                    </section>
+                    <hr/>
+                    <aside class="post-meta">
+                        <p>Category: <a href="http://mangohero1985.github.io/category/machine-learning.html">Machine learning</a></p>
+                        <p>Tags: <a href="http://mangohero1985.github.io/tag/machine-learning.html">Machine learning</a></p>
+						<p>Last modified: 2016-02-17 00:00:00-08:00</p>
+                    </aside>
+                    <hr/>
+<section>
+    <p id="post-share-links">
+        Share on:
+        <a href="http://twitter.com/home?status=how%20to%20tackle%20real%20life%20problem%20by%20machine%20learning%3F%20http%3A//mangohero1985.github.io/machine_learning.html" target="_blank" title="Share on Twitter">Twitter</a>
+        |
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A//mangohero1985.github.io/machine_learning.html" target="_blank" title="Share on Facebook">Facebook</a>
+        |
+        <a href="https://plus.google.com/share?url=http%3A//mangohero1985.github.io/machine_learning.html" target="_blank" title="Share on Google Plus">Google+</a>
+        |
+        <a href="mailto:?subject=how%20to%20tackle%20real%20life%20problem%20by%20machine%20learning%3F&amp;body=http%3A//mangohero1985.github.io/machine_learning.html" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'mangohero1985';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+                </article>
+            </li>
+        </ol>
+    </div>
+        </div>
+
+<script>
+    var _gaq=[['_setAccount','UA-48204918-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+        <script src="http://mangohero1985.github.io/theme/js/main.js"></script>
+    </body>
+</html>
