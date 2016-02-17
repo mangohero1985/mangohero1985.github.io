@@ -7,7 +7,7 @@ Note that the number of words we use depends on your setting for the window size
 &lt;hr /&gt;
 &lt;ol&gt;
 &lt;li id="fn:cbow"&gt;
-&lt;p&gt;&lt;a href="/https://www.quora.com/What-are-the-continuous-bag-of-words-and-skip-gram-architectures-in-laymans-terms"&gt;Quroa&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:cbow" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.quora.com/What-are-the-continuous-bag-of-words-and-skip-gram-architectures-in-laymans-terms"&gt;Quroa&lt;/a&gt;&amp;#160;&lt;a class="footnote-backref" href="#fnref:cbow" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Mango</dc:creator><pubDate>Wed, 17 Feb 2016 00:00:00 -0800</pubDate><guid>tag:mangohero1985.github.io,2016-02-17:cbow.html</guid><category>Neural language model</category><category>Deep learning</category></item><item><title>Skip-gram</title><link>http://mangohero1985.github.io/skip_gram.html</link><description>&lt;h2&gt;Skip-gram sampling&lt;/h2&gt;
