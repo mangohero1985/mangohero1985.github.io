@@ -6,7 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>MACHINE LEARING NOTE - Deep Learning</title>
+        <title>    Negtive sampling
+</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
             <link rel="stylesheet" href="http://mangohero1985.github.io/theme/css/normalize.css">
@@ -54,8 +55,7 @@
     <p>
     	Fork this site <a href="https://github.com/mangohero1985/mangohero1985.github.io" target="acm-sfsu">here</a>.
     </p>
-</footer></header>
-    <div id="post-container">
+</footer></header>    <div id="post-container">
         <ol id="post-list">
             <li>
                 <article class="post-entry">
@@ -66,44 +66,62 @@
                         <a href="http://mangohero1985.github.io/negtive_sampling.html" rel="bookmark"><h1>Negtive sampling</h1></a>
                     </header>
                     <section class="post-content">
-                        <p>The idea of word2vec is to maximise the similarity (dot product) between the vectors for words which appear close together (in the context of each other) in text, and minimise the similarity of words that do not. In equation (3) of the paper you link to, ignore the exponentiation for ...</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2016-02-17T14:27:16-08:00" pubdate>
-                            Wed 17 February 2016
-                        </time>
-                        <a href="http://mangohero1985.github.io/cbow.html" rel="bookmark"><h1>Continuous bag of words</h1></a>
-                    </header>
-                    <section class="post-content">
-                        <p>Cbow (continuous bag of words) is a basic language sampling model based on n-gram. It can predict the target word by using maximum likelihood estimation based on continous word sequences in vicinity of target word.</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
-            <li>
-                <article class="post-entry">
-                    <header class="entry-header">
-                        <time class="post-time" datetime="2016-02-17T13:41:26-08:00" pubdate>
-                            Wed 17 February 2016
-                        </time>
-                        <a href="http://mangohero1985.github.io/skip_gram.html" rel="bookmark"><h1>Skip-gram</h1></a>
-                    </header>
-                    <section class="post-content">
-                        <p>Skip-grams is a technique where by n-grams are still stored  to model language, but they allow for tokens to be skipped. This method can overcome the data sparsity problem to some extend.</p>
-                    </section>
-                </article>
-            </li>
-            <hr/>
-        </ol>
-        <div class="paginator">
-            Page 1 / 1
-        </div>
+                        <p>The idea of word2vec is to maximise the similarity (dot product) between the vectors for words which appear close together (in the context of each other) in text, and minimise the similarity of words that do not. In equation (3) of the paper you link to, ignore the exponentiation for a moment. You have</p>
+<div class="highlight"><pre>  v_c * v_w/ sum(v_c1 * v_w)
+</pre></div>
 
+
+<p>The numerator is basically the similarity between words c (the context) and w (the target) word. The denominator computes the similarity of all other contexts c1 and the target word w. Maximising this ratio ensures words that appear closer together in text have more similar vectors than words that do not. However, computing this can be very slow, because there are many contexts c1. Negative sampling is one of the ways of addressing this problem- just select a couple of contexts c1 at random. The end result is that if cat appears in the context of food, then the vector of food is more similar to the vector of cat (as measures by their dot product) than the vectors of several other randomly chosen words (e.g. democracy, greed, Freddy), instead of all other words in language. This makes word2vec much much faster to train<sup id="fnref:github"><a class="footnote-ref" href="#fn:github" rel="footnote">1</a></sup>.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:github">
+<p><a href="http://stackoverflow.com/questions/27860652/word2vec-negative-sampling-in-layman-term/27864657#27864657">github</a>&#160;<a class="footnote-backref" href="#fnref:github" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                        <hr/>
+<p>
+        Previous Article: 
+            <a href="http://mangohero1985.github.io/cbow.html">
+                Continuous bag of words
+            </a>
+</p>                    </section>
+                    <hr/>
+                    <aside class="post-meta">
+                        <p>Category: <a href="http://mangohero1985.github.io/category/deep-learning.html">Deep Learning</a></p>
+                        <p>Tags: <a href="http://mangohero1985.github.io/tag/negtive-sampling-is-a-optimized-sampling-method-which-can-be-combined-with-softmax-to-achieve-higher-efficiency-on-computation.html">Negtive sampling is a optimized sampling method which can be combined with softmax to achieve higher efficiency on computation.</a></p>
+						<p>Last modified: 2016-02-17 00:00:00-08:00</p>
+                    </aside>
+                    <hr/>
+<section>
+    <p id="post-share-links">
+        Share on:
+        <a href="http://twitter.com/home?status=Negtive%20sampling%20http%3A//mangohero1985.github.io/negtive_sampling.html" target="_blank" title="Share on Twitter">Twitter</a>
+        |
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A//mangohero1985.github.io/negtive_sampling.html" target="_blank" title="Share on Facebook">Facebook</a>
+        |
+        <a href="https://plus.google.com/share?url=http%3A//mangohero1985.github.io/negtive_sampling.html" target="_blank" title="Share on Google Plus">Google+</a>
+        |
+        <a href="mailto:?subject=Negtive%20sampling&amp;body=http%3A//mangohero1985.github.io/negtive_sampling.html" target="_blank" title="Share via Email">Email</a>
+    </p>
+</section>
+<div class="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'mangohero1985';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+                </article>
+            </li>
+        </ol>
     </div>
         </div>
 
